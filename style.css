@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: inherit; */
+}
+
+html {
+    font-size: 62.5%;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #dbfff1;
+    background-color: #1e1e1e;
+    height: 100vh;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+main {
+    margin: 10rem 5rem 0 5rem; 
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    transition: all 1s;
+}
+
+/* NAV */
+.welcome {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.logo {
+    height: 5.25rem;
+}
+
+.coins {
+    font-size: 3rem;
+    font-weight: 500;
+    display: flex;
+}
+
+.coins__value {
+    color: gold;
+}
+
+.coins__label {
+    margin-left: 1rem;
+}
+
+/* Game */
+.gameNav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.startButton{
+    background-color: limegreen;
+    width: 20rem;
+    font-size: 5rem;
+    border-radius: 1rem;
+    font-family: "Poppins", sans-serif;
+    outline-width: 1rem;
+    border: .4rem solid black;
+}
+
+.hearts{
+    display: flex;
+}
+
+.hearts__value{
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.hearts__icon{
+    width: 5rem;
+    height: 5rem;
+    margin: auto auto auto 1rem;
+}
+
+.gameButton {
+    height: 10rem;
+    width: 10rem;
+}
+
+/* History */
+.history {
+    grid-row: 2 / span 3;
+    background-color: #252526;
+    border-radius: 1rem;
+    width: 35rem;
+    overflow-y: auto;
+}
+
+.history__label {
+    color: #d7ba7d;
+    font-size: 6.5rem;
+}
+
+.history__row {
+    padding: 2.25rem 2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    justify-content: space-between;
+}
+
+.history__type {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    padding: 0.1rem 1rem;
+    border-radius: 10rem;
+    margin-right: 2rem;
+}
+
+.history__type__game {
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.history__type__purchase {
+    background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+.history__coins {
+    font-size: 1.7rem;
+    display: flex;
+}
+
+.history__coins__value {
+    color: gold;
+}
+
+.history__coins__label {
+    margin-left: .5rem;
+}
+
+/* Market */
+
+.market {
+    grid-row: 2 / span 3;
+    /* background-color: #3c3c3c; */
+    background-color: #252526;
+    border-radius: 1rem;
+    width: 45rem;
+    overflow-y: auto;
+}
+
+.market__label {
+    color: #67cdfe;
+    font-size: 6.5rem;
+}
+
+.market__row {
+    padding: 2.25rem 2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    justify-content: space-between;
+}
+
+.market__row__desc {
+    display: flex;
+    align-items: center;
+}
+
+.market__upgrade__img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.market__upgrade__label {
+    font-size: 2.5rem;
+}
+
+.market__upgrade__price {
+    font-size: 4rem;
+    background-color: transparent;
+    border: none;
+    color:gold;
+}
+
+.market__upgrade__level {
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 1rem;
+}

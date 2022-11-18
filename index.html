@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Reaction Clicker</title>
+</head>
+
+<body>
+    <nav>
+        <p class="welcome">Welcome to Reaction Clicker!</p>
+        <div class="coins">
+            <p class="coins__value">50</p>
+            <p class="coins__label">coins</p>
+        </div>
+    </nav>
+    <main>
+        <!--Market-->
+        <div>
+            <p class="market__label">Market</p>
+            <div class="market">
+                <div class="market__row">
+                    <div class="market__row__desc">
+                        <img class="market__upgrade__img" src="upgrade_heart.png"></img>
+                        <p class="market__upgrade__label">More hearts</p>
+                    </div>
+                    <p class="market__upgrade__level heart">0/3</p>
+                    <button class="market__upgrade__price heart">30</p>
+                </div>
+                <div class="market__row">
+                    <div class="market__row__desc">
+                        <img class="market__upgrade__img" src="upgrade_click.png"></img>
+                        <p class="market__upgrade__label">Click value</p>
+                    </div>
+                    <p class="market__upgrade__level value">0/3</p>
+                    <button class="market__upgrade__price value">30</p>
+                </div>
+                <div class="market__row">
+                    <div class="market__row__desc">
+                        <img class="market__upgrade__img" src="upgrade_lifetime.png"></img>
+                        <p class="market__upgrade__label">Click lifetime</p>
+                    </div>
+                    <p class="market__upgrade__level lifetime">0/3</p>
+                    <button class="market__upgrade__price lifetime">30</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Game-->
+        <div class="game">
+            <div class="gameNav">
+                <button class="startButton">START</button>
+                <div class="hearts">
+                    <p class="hearts__value">3</p>
+                    <img class="hearts__icon" src="heart.png"/>
+                </div>
+            </div>
+            <game>
+                <!--Filled dynamically in script.js-->
+            </game>
+        </div>
+        
+        <!-- Recent history -->
+        <div>
+            <p class="history__label">History</p>
+            <div class="history">
+                <!--Filled dynamically in script.js-->
+             </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
