@@ -165,6 +165,7 @@ buttons.forEach(function (button) {
     });
 });
 btnStart.addEventListener('click', startGame);
+//there is quite a bit of code reuse, but js is not oop
 btnBuyUpgrade1.addEventListener('click', function(){
     if(btnBuyUpgrade1.disabled){
         return;
@@ -180,6 +181,8 @@ btnBuyUpgrade1.addEventListener('click', function(){
 
         maxHearts++;
         lvlUpgrade1Element.textContent = `${++lvlUpgrade1}/3`;
+    }else{
+        alert("not enough coins");
     }
     //once hit max lvl, disable the buy button
     if(lvlUpgrade1 == 3){
@@ -203,6 +206,8 @@ btnBuyUpgrade2.addEventListener('click', function(){
 
         clickValue++;
         lvlUpgrade2Element.textContent = `${++lvlUpgrade2}/3`;
+    }else{
+        alert("not enough coins");
     }
     //once hit max lvl, disable the buy button
     if(lvlUpgrade2 == 3){
@@ -226,6 +231,8 @@ btnBuyUpgrade3.addEventListener('click', function(){
 
         clickLifetime+= .5;
         lvlUpgrade3Element.textContent = `${++lvlUpgrade3}/3`;
+    }else{
+        alert("not enough coins");
     }
     //once hit max lvl, disable the buy button
     if(lvlUpgrade3 == 3){
